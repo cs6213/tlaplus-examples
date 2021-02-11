@@ -1,6 +1,8 @@
 --------------------------- MODULE SimpleProgram ---------------------------
 
 (*
+Example 01
+
 This is an encoding of a simple program, corresponding to the following
 pseudo-C code:
 
@@ -29,7 +31,7 @@ Add1 == \/ /\ pc = "middle"
            /\ i' = i + 1
            /\ pc' = "done"
 
-Next == \/ Pick 
+Next == \/ Pick
         \/ Add1
 
 =============================================================================

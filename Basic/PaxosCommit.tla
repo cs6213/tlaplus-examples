@@ -286,7 +286,8 @@ THEOREM PCSpec => TCSpec
 
 CONSTANTS
 r1, r2, a1, a2, a3
-symm == Permutations({a1, a2, a3}) \union Permutations({r1, r2})
+symm == Permutations({a1, a2, a3}) \union 
+        Permutations({r1, r2})
 
 
 =============================================================================

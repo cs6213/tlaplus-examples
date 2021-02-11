@@ -1,18 +1,19 @@
 ------------------------------ MODULE TCommit ------------------------------
-
 (***************************************************************************)
 (* This specification is explained in "Transaction Commit", Lecture 5 of   *)
 (* the TLA+ Video Course.                                                  *)
 (***************************************************************************)
 CONSTANT RM       \* The set of participating resource managers
 
-VARIABLE rmState  \* rmState[rm] is the state of resource manager r.
+VARIABLE rmState  \* rmState[rm] is the state of resource manager rm.
 -----------------------------------------------------------------------------
 TCTypeOK == 
   (*************************************************************************)
   (* The type-correctness invariant                                        *)
   (*************************************************************************)
   rmState \in [RM -> {"working", "prepared", "committed", "aborted"}]
+    \* This is an array, indexed over elements of the set RM
+    \* In general, arrays are defined as comprehensions
         
 TCInit ==   rmState = [r \in RM |-> "working"]
   (*************************************************************************)
@@ -44,6 +45,7 @@ Decide(r)  == \/ /\ rmState[r] = "prepared"
                  /\ notCommitted
                  /\ rmState' = [rmState EXCEPT ![r] = "aborted"]
 
+
 TCNext == \E r \in RM : Prepare(r) \/ Decide(r)
   (*************************************************************************)
   (* The next-state action.                                                *)
@@ -58,8 +60,7 @@ TCConsistent ==
                        /\ rmState[r2] = "committed"
 -----------------------------------------------------------------------------
 (***************************************************************************)
-(* The following part of the spec is not discussed in Video Lecture 5.  It *)
-(* will be explained in Video Lecture 8.                                   *)
+(* The following part  will be explained later                             *)
 (***************************************************************************)
 TCSpec == TCInit /\ [][TCNext]_rmState
   (*************************************************************************)
@@ -75,10 +76,5 @@ THEOREM TCSpec => [](TCTypeOK /\ TCConsistent)
   (* equivalent to invariance of both of the formulas TCTypeOK and         *)
   (* TCConsistent.                                                         *)
   (*************************************************************************)
-  
-  (*************************************************************************)
-  (* This is some stuff that's in a box.                                   *)
-  (*************************************************************************)
-
 
 =============================================================================

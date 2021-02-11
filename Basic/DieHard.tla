@@ -47,9 +47,6 @@ Next == \/ FillSmall
 \* TypeOK == /\ small \in 0..3
 \*           /\ big \in 0..5
           
-
-\* BigNotFour == big /= 4
-
 =============================================================================
 \* Modification History
 \* Last modified Thu Oct 19 13:35:01 CDT 2017 by chris

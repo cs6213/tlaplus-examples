@@ -1,2 +1,7 @@
+# Automatically generate files via TLA+ toolbox
+
 *.old
 *.out
+*.tex
+*.pdf
+*.dvi

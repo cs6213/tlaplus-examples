@@ -4,7 +4,7 @@ This repository contains basic examples of systems specifications written in TLA
 
 ## Software Prerequisites
 
-Please, make sure to install [Visual Studio Code]() and its [TLA+ Extension](https://marketplace.visualstudio.com/items?itemName=alygin.vscode-tlaplus), following the instructions on the linked pages.
+Please, make sure to install [Visual Studio Code](https://code.visualstudio.com/download) and its [TLA+ Extension](https://marketplace.visualstudio.com/items?itemName=alygin.vscode-tlaplus), following the instructions on the linked pages.
 
 ## Running Examples
 

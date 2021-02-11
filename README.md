@@ -14,5 +14,5 @@ Each individual example is implemented in a separate `*.tla` file. Use contextua
 
 Most of the examples in this repository are adapted from the following resourses:
 
-* Leslie Lamport's [TLA+ Webpage](https://lamport.azurewebsites.net/tla/tla.html)
+* Leslie Lamport's [Video Lectures on TLA+](http://lamport.azurewebsites.net/video/videos.html)
 * [The Archive of TLA+ Examples](https://github.com/tlaplus/Examples) 

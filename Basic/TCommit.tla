@@ -1,7 +1,8 @@
 ------------------------------ MODULE TCommit ------------------------------
 (***************************************************************************)
+(*  Example 03                                                             *)
 (* This specification is explained in "Transaction Commit", Lecture 5 of   *)
-(* the TLA+ Video Course.                                                  *)
+(* the TLA+ Course (http://lamport.azurewebsites.net/video/videos.html).   *)
 (***************************************************************************)
 CONSTANT RM       \* The set of participating resource managers
 

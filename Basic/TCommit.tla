@@ -82,6 +82,3 @@ THEOREM TCSpec => [](TCTypeOK /\ TCConsistent)
 
 
 =============================================================================
-\* Modification History
-\* Last modified Mon Oct 23 15:46:41 CDT 2017 by chris
-\* Created Sun Oct 22 20:26:04 CDT 2017 by chris

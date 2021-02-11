@@ -48,6 +48,3 @@ Next == \/ FillSmall
 \*           /\ big \in 0..5
           
 =============================================================================
-\* Modification History
-\* Last modified Thu Oct 19 13:35:01 CDT 2017 by chris
-\* Created Wed Oct 18 22:38:08 CDT 2017 by chris

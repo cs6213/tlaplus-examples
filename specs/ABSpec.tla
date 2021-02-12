@@ -1,3 +1,5 @@
+\* Copyright: Leslie Lamport, The TLA+ Video Course
+\* http://lamport.azurewebsites.net/video/videos.html
 ------------------------------ MODULE ABSpec --------------------------------
 (* Example 05: Alternating bit protocols specification. *)
 

@@ -1,3 +1,5 @@
+\* Copyright: Leslie Lamport, The TLA+ Video Course
+\* http://lamport.azurewebsites.net/video/videos.html
 --------------------------------- MODULE AB2 ---------------------------------
 (***************************************************************************)
 (* This is a modification of spec AB in which instead of losing messages,  *)

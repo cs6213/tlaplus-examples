@@ -1,6 +1,6 @@
 # TLA+ Examples
 
-This repository contains basic examples of systems specifications written in TLA+ and PlusCal.
+This repository contains basic examples of systems specifications written in TLA+ and PlusCal, as well as their model configurations for checking using VSCode TLA+ plugin.
 
 ## Software Prerequisites
 

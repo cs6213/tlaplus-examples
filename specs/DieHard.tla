@@ -1,9 +1,9 @@
+\* Copyright: Leslie Lamport, The TLA+ Video Course
+\* http://lamport.azurewebsites.net/video/videos.html
 ------------------------------ MODULE DieHard ------------------------------
 (*
 Example 02.
 A specification implementing the challenge from the Die Hard 3 movie.
-
-Source: http://lamport.azurewebsites.net/video/videos.html
 *)
 
 EXTENDS Integers

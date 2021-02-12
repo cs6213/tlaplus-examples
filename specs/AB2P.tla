@@ -1,3 +1,5 @@
+\* Copyright: Leslie Lamport, The TLA+ Video Course
+\* http://lamport.azurewebsites.net/video/videos.html
 -------------------------------- MODULE AB2P --------------------------------
 (***************************************************************************)
 (* This is a version of specification AB2 modified so it implements the    *)

@@ -7,4 +7,4 @@
 *.dvi
 *.fp
 *.st
-states/*
+specs/states/

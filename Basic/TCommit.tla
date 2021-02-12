@@ -64,6 +64,10 @@ TCConsistent ==
 (* The following part  will be explained later                             *)
 (***************************************************************************)
 TCSpec == TCInit /\ [][TCNext]_rmState
+\* The subscript enumerates essential variables (remember Forward simulations)
+\* In other words, anyone who refines this spec is allowed the "stuttering"
+\* steps that don't modify rmState
+\* [TCNext]_rmState is a shortcut for TCNext \/ (UNCHANGED rmState)
   (*************************************************************************)
   (* The complete specification of the protocol written as a temporal      *)
   (* formula.                                                              *)

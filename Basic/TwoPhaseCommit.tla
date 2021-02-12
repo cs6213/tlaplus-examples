@@ -150,7 +150,9 @@ TPNext ==
 (* The material below this point  will be explained later.                 *)
 (***************************************************************************)
 
-TPSpec == TPInit /\ [][TPNext]_<<rmState, tmState, tmPrepared, msgs>>
+\* The subscript enumerates essential variables (remember Forward simulations)
+\* Any implementation of 2PC allows steps that leave these 4 vars unchanged.
+TPSpec == [][TPNext]_<<rmState, tmState, tmPrepared, msgs>> /\ TPInit
   (*************************************************************************)
   (* The complete spec of the Two-Phase Commit protocol.                   *)
   (*************************************************************************)

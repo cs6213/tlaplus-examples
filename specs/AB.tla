@@ -78,7 +78,7 @@ Next == ASnd \/ ARcv \/ BSnd \/ BRcv \/ LoseMsg
 
 Spec == Init /\ [][Next]_vars
 -----------------------------------------------------------------------------
-(*                 Constraints for tractable checking                       *)
+(*                 Constraints for tractable checking                      *)
 -----------------------------------------------------------------------------
 
 bufferLen == /\ Len(AtoB) <= 3

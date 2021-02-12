@@ -46,7 +46,7 @@ B == /\ AVar # BVar
 
 Next == A \/ B
 
-Spec == Init /\ [][Next]_vars
+Spec == Init /\ [][Next]_vars 
 
 (***************************************************************************)
 (* For understanding the spec, it's useful to define formulas that should  *)

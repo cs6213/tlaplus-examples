@@ -5,3 +5,6 @@
 *.tex
 *.pdf
 *.dvi
+*.fp
+*.st
+states/*

@@ -1,6 +1,8 @@
 \* Copyright: Leslie Lamport, The TLA+ Video Course
 \* http://lamport.azurewebsites.net/video/videos.html
 -------------------------------- MODULE AB2P --------------------------------
+(* Example 08: Alternating bit protocol with corrupt messages and fairness. *)
+
 (***************************************************************************)
 (* This is a version of specification AB2 modified so it implements the    *)
 (* fairness requirement of the high-level AB specification in module       *)

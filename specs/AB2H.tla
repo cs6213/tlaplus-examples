@@ -5,6 +5,8 @@
 (* This is spec AB2 with history variables AtoB and BtoA added so the spec *)
 (* implements spec AB under the identity refinement mapping.               *)
 (***************************************************************************)
+(* Example 09: Alternating bit protocol implementation with auxiliary vairables. *)
+
 EXTENDS Integers, Sequences
 
 CONSTANT Data, Bad

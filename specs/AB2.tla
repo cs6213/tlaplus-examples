@@ -7,6 +7,8 @@
 (* the value Bad.  The to communication channels are represented by the    *)
 (* variables AtoB2 and BtoA2.                                              *)
 (***************************************************************************)
+(* Example 07: Alternating bit implementation 2: corrupt messages.         *)
+
 EXTENDS Integers, Sequences\* , TLC
 
 CONSTANT Data, Bad

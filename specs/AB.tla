@@ -1,6 +1,8 @@
 \* Copyright: Leslie Lamport, The TLA+ Video Course
 \* http://lamport.azurewebsites.net/video/videos.html
 --------------------------------- MODULE AB ---------------------------------
+(* Example 06: Alternating bit protocols implementation. *)
+
 EXTENDS TLC, Integers, Sequences
 
 INSTANCE SeqSpec

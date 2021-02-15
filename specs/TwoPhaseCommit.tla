@@ -142,7 +142,7 @@ RMRcvAbortMsg(r) ==
 
 TPNext ==
   \/ TMCommit \/ TMAbort
-  \/ \E r \in RM : 
+  \/ \E r \in RM : \* Self-check: why it's exsitential quant-n here?
        TMRcvPrepared(r) \/ RMPrepare(r) \/ RMChooseToAbort(r)
          \/ RMRcvCommitMsg(r) \/ RMRcvAbortMsg(r)
 -----------------------------------------------------------------------------

@@ -16,7 +16,7 @@ VARIABLES AVar, BVar,   \* The same as in module ABSpec
 
 vars == << AVar, BVar, AtoB, BtoA >>
 
-TypeOK ==  /\ AVar \in Data \X {0,1}
+TypeOK == /\ AVar \in Data \X {0,1}
           /\ BVar \in Data \X {0,1}
           /\ AtoB \in Seq(Data \X {0,1})
           /\ BtoA \in Seq({0,1})

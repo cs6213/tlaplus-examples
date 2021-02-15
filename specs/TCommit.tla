@@ -42,7 +42,7 @@ Prepare(r) == /\ rmState[r] = "working"
 Decide(r)  == \/ /\ rmState[r] = "prepared"
                  /\ canCommit
                  /\ rmState' = [rmState EXCEPT ![r] = "committed"]
-              \/ /\ rmState[r] \in {"working", "prepared"}
+              \/ /\ rmState[r] \in {"working", "prepared"} \* experiment here
                  /\ notCommitted
                  /\ rmState' = [rmState EXCEPT ![r] = "aborted"]
 
